@@ -43,38 +43,38 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="relative pt-24 pb-8 overflow-hidden bg-white dark:bg-[#0A0F1C] transition-colors duration-500 border-t border-slate-200 dark:border-white/5">
+    <footer className="relative pt-16 sm:pt-24 pb-8 overflow-hidden bg-white dark:bg-[#0A0F1C] transition-colors duration-500 border-t border-slate-200 dark:border-white/5">
       
       {/* Ambient Decorative Background */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] dark:opacity-[0.05] mix-blend-overlay"></div>
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#1774B6]/5 dark:bg-[#1774B6]/10 rounded-[100%] blur-[120px] pointer-events-none"></div>
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] sm:w-[800px] h-[200px] sm:h-[400px] bg-[#1774B6]/5 dark:bg-[#1774B6]/10 rounded-[100%] blur-[80px] sm:blur-[120px] pointer-events-none"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* --- MASSIVE CALL TO ACTION --- */}
-        <div className="bg-slate-50 dark:bg-slate-900/50 backdrop-blur-2xl border border-slate-200 dark:border-white/10 rounded-[2.5rem] p-8 md:p-12 mb-20 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl dark:shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+        <div className="bg-slate-50 dark:bg-slate-900/50 backdrop-blur-2xl border border-slate-200 dark:border-white/10 rounded-[2rem] sm:rounded-[2.5rem] p-6 sm:p-10 lg:p-12 mb-12 sm:mb-20 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
           <div className="text-center md:text-left max-w-xl">
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-4 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 dark:text-white mb-3 sm:mb-4 tracking-tight">
               Ready to prioritize your health?
             </h2>
-            <p className="text-slate-600 dark:text-slate-400 font-medium">
-              Join thousands of patients who trust Singhe Hospitals for world-class, compassionate care.
+            <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-medium">
+              Join thousands of patients who trust Singhe Hospitals for world-class, compassionate care.[cite: 9]
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full md:w-auto">
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[#1774B6] text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-[#125d93] shadow-lg transition-colors whitespace-nowrap"
+              className="bg-[#1774B6] text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg hover:bg-[#125d93] shadow-lg transition-colors whitespace-nowrap"
             >
-              Book an Appointment
+              Book Appointment
             </motion.button>
             <motion.button 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-slate-50 dark:hover:bg-white/20 transition-colors whitespace-nowrap"
+              className="bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg hover:bg-slate-50 dark:hover:bg-white/20 transition-colors whitespace-nowrap"
             >
               Download App
             </motion.button>
@@ -82,49 +82,49 @@ export default function Footer() {
         </div>
 
         {/* --- MAIN FOOTER CONTENT --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-12 sm:mb-16">
           
           {/* Brand Column */}
-          <div className="lg:col-span-4 flex flex-col gap-6 text-center lg:text-left items-center lg:items-start">
+          <div className="sm:col-span-2 lg:col-span-4 flex flex-col gap-6 text-center lg:text-left items-center lg:items-start">
             <div className="flex items-center gap-2">
               <div className="bg-gradient-to-tr from-[#1774B6] to-[#4CA1E6] p-2 rounded-xl">
-                <HeartPulse className="h-8 w-8 text-white" />
+                <HeartPulse className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
               </div>
-              <span className="text-2xl font-black tracking-tighter text-slate-900 dark:text-white">
+              <span className="text-xl sm:text-2xl font-black tracking-tighter text-slate-900 dark:text-white">
                 Singhe<span className="text-[#1774B6] dark:text-[#4CA1E6]">Hospitals</span>
               </span>
             </div>
-            <p className="text-slate-500 dark:text-slate-400 font-medium max-w-sm">
-              Pioneering the future of healthcare in Sri Lanka with advanced technology, elite specialists, and unmatched empathy.
+            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium max-w-sm">
+              Pioneering the future of healthcare in Sri Lanka with advanced technology and elite specialists.[cite: 9]
             </p>
             
             {/* Contact Details */}
-            <div className="flex flex-col gap-3 mt-2 text-sm font-medium text-slate-600 dark:text-slate-300">
+            <div className="flex flex-col gap-3 mt-2 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-300">
               <span className="flex items-center gap-3 justify-center lg:justify-start">
-                <Phone className="h-4 w-4 text-[#1774B6] dark:text-[#4CA1E6]" /> +94 45 22 33 444
+                <Phone className="h-4 w-4 text-[#1774B6]" /> +94 45 22 33 444
               </span>
               <span className="flex items-center gap-3 justify-center lg:justify-start">
-                <Mail className="h-4 w-4 text-[#1774B6] dark:text-[#4CA1E6]" /> info@singhehospitals.com
+                <Mail className="h-4 w-4 text-[#1774B6]" /> info@singhehospitals.com
               </span>
               <span className="flex items-center gap-3 justify-center lg:justify-start">
-                <MapPin className="h-4 w-4 text-[#1774B6] dark:text-[#4CA1E6]" /> Ratnapura, Sri Lanka
+                <MapPin className="h-4 w-4 text-[#1774B6]" /> Ratnapura, Sri Lanka
               </span>
             </div>
           </div>
 
           {/* Links Columns */}
-          <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center sm:text-left">
+          <div className="sm:col-span-2 lg:col-span-5 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-left">
             {footerLinks.map((section, idx) => (
-              <div key={idx} className="flex flex-col gap-4">
-                <h4 className="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-sm">
+              <div key={idx} className="flex flex-col gap-3 sm:gap-4">
+                <h4 className="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-[10px] sm:text-xs">
                   {section.title}
                 </h4>
-                <ul className="flex flex-col gap-3">
+                <ul className="flex flex-col gap-2 sm:gap-3">
                   {section.links.map((link, i) => (
                     <li key={i}>
-                      <a href="#" className="text-sm text-slate-500 dark:text-slate-400 hover:text-[#1774B6] dark:hover:text-[#4CA1E6] transition-colors inline-flex items-center gap-1 group">
+                      <a href="#" className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 hover:text-[#1774B6] transition-colors inline-flex items-center gap-1 group">
                         {link}
-                        <ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                        <ArrowRight className="h-3 w-3 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all hidden sm:block" />
                       </a>
                     </li>
                   ))}
@@ -134,18 +134,18 @@ export default function Footer() {
           </div>
 
           {/* Newsletter Column */}
-          <div className="lg:col-span-3 flex flex-col gap-4 text-center lg:text-left items-center lg:items-start">
-            <h4 className="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-sm">
+          <div className="sm:col-span-2 lg:col-span-3 flex flex-col gap-4 text-center lg:text-left items-center lg:items-start">
+            <h4 className="font-bold text-slate-900 dark:text-white uppercase tracking-wider text-[10px] sm:text-xs">
               Stay Updated
             </h4>
-            <p className="text-sm text-slate-500 dark:text-slate-400">
-              Subscribe to our newsletter for health tips and hospital updates.
+            <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 max-w-xs">
+              Subscribe for health tips and updates.[cite: 9]
             </p>
             <div className="relative w-full max-w-xs group mt-2">
               <input 
                 type="email" 
-                placeholder="Enter your email" 
-                className="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 rounded-xl pl-4 pr-12 py-3 focus:outline-none focus:ring-2 focus:ring-[#1774B6]/50 transition-all"
+                placeholder="Enter email" 
+                className="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white placeholder-slate-400 rounded-xl pl-4 pr-12 py-3 focus:outline-none focus:ring-2 focus:ring-[#1774B6]/50 transition-all text-sm"
               />
               <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-[#1774B6] hover:bg-[#125d93] text-white p-1.5 rounded-lg transition-colors">
                 <ArrowRight className="h-4 w-4" />
@@ -153,16 +153,15 @@ export default function Footer() {
             </div>
 
             {/* Social Icons */}
-            <div className="flex gap-3 mt-6">
+            <div className="flex gap-3 mt-4 sm:mt-6">
               {socialLinks.map((social, idx) => {
                 const Icon = social.icon;
                 return (
                   <motion.a 
                     key={idx}
                     href={social.href}
-                    whileHover={{ scale: 1.1, y: -2 }}
-                    whileTap={{ scale: 0.9 }}
-                    className="bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 p-2.5 rounded-xl text-slate-500 dark:text-slate-400 hover:text-[#1774B6] dark:hover:text-white hover:border-[#1774B6]/50 dark:hover:border-white/30 transition-colors flex items-center justify-center"
+                    whileHover={{ y: -2 }}
+                    className="bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 p-2 sm:p-2.5 rounded-xl text-slate-500 dark:text-slate-400 hover:text-[#1774B6] transition-colors"
                   >
                     <Icon />
                   </motion.a>
@@ -174,25 +173,23 @@ export default function Footer() {
         </div>
 
         {/* --- BOTTOM BAR --- */}
-        <div className="border-t border-slate-200 dark:border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-sm text-slate-500 dark:text-slate-400 font-medium">
-            © {new Date().getFullYear()} Singhe Hospitals PLC. All rights reserved.
+        <div className="border-t border-slate-200 dark:border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-4">
+          <div className="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium text-center md:text-left">
+            © {new Date().getFullYear()} Singhe Hospitals PLC. All rights reserved.[cite: 9]
           </div>
           
-          <div className="flex items-center gap-6 text-sm text-slate-500 dark:text-slate-400 font-medium">
+          <div className="flex items-center gap-4 sm:gap-6 text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 font-medium">
             <a href="#" className="hover:text-slate-900 dark:hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-slate-900 dark:hover:text-white transition-colors">Terms of Service</a>
           </div>
 
-          {/* Back to Top Button */}
           <motion.button
             onClick={scrollToTop}
-            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-2 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 px-4 py-2 rounded-full text-slate-600 dark:text-slate-300 font-bold text-sm hover:bg-slate-200 dark:hover:bg-white/10 transition-colors group"
+            className="flex items-center gap-2 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 px-4 py-2 rounded-full text-slate-600 dark:text-slate-300 font-bold text-[10px] sm:text-xs hover:bg-slate-200 transition-colors group"
           >
             Back to Top
-            <ArrowUp className="h-4 w-4 group-hover:-translate-y-1 transition-transform" />
+            <ArrowUp className="h-3 w-3 sm:h-4 sm:w-4 group-hover:-translate-y-1 transition-transform" />
           </motion.button>
         </div>
 

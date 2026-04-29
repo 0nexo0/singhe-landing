@@ -22,12 +22,12 @@ function App() {
         <Hero />
         <Specialties />
         <VirtualBody />
+        <AboutUs />
         {/* <EliteSpecialists /> */}
         <HeartbeatApp />
         <LabNetwork />
         {/* <AmbulanceService /> */}
         <PatientJourney />
-        <AboutUs />
         <ContactUs />
       </main>
         <Footer />
