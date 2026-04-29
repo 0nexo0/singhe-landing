@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/hero/hero';
-import HeartbeatApp from './components/HeartbeatApp/HeartbeatApp'; // Make sure to save the Heartbeat code in this path
+import HeartbeatApp from './components/HeartBeatApp/HeartBeatApp'; // Make sure to save the Heartbeat code in this path
 import LabNetwork from './components/LabNetwork/LabNetwork';
 import PatientJourney from './components/PatientJourney/PatientJourney';
 import AboutUs from './components/AboutUs/AboutUs';
